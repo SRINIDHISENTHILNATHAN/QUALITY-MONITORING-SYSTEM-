@@ -1,58 +1,82 @@
-# QUALITY-MONITORING-SYSTEM
+# Real-Time AI-Based Print Quality Monitoring System
+## overview
 
-Small description about the project like one below
-The integration of a chatbot within a hostel booking system, aimed at streamlining the reservation process for students and improving the overall user experience.
+In modern industrial printing environments, maintaining consistent print quality is essential for reducing waste and ensuring customer satisfaction. Traditional manual inspection methods are slow, subjective, and unreliable when production speed is high. This project addresses these limitations by introducing an AI-based automated print quality monitoring system.
 
-## About
-<!--Detailed Description about the project-->
-Tailored Chatbot for Hostel Booking System is a project designed to integrate a chatbot that leverages advanced natural language processing techniques to understand and respond to user queries to the hostel booking system. Traditional hostel booking processes are often time-consuming and involve manual searches and extensive communication with hostel staff. This project seeks to overcome these challenges by creating an easy-to-use chatbot interface that assists students in addressing inquiries.
+## Aim 
 
-## Features
-<!--List the features of the project as shown below-->
-- Implements advance neural network method.
-- A framework based application for deployment purpose.
-- High scalability.
-- Less time complexity.
-- A specific scope of Chatbot response model, using json data format.
+The aim of this project is to design and implement a real-time print quality monitoring system using computer vision and deep learning techniques to automatically detect and classify printing defects.
 
-## Requirements
-<!--List the requirements of the project as shown below-->
-* Operating System: Requires a 64-bit OS (Windows 10 or Ubuntu) for compatibility with deep learning frameworks.
-* Development Environment: Python 3.6 or later is necessary for coding the sign language detection system.
-* Deep Learning Frameworks: TensorFlow for model training, MediaPipe for hand gesture recognition.
-* Image Processing Libraries: OpenCV is essential for efficient image processing and real-time hand gesture recognition.
-* Version Control: Implementation of Git for collaborative development and effective code management.
-* IDE: Use of VSCode as the Integrated Development Environment for coding, debugging, and version control integration.
-* Additional Dependencies: Includes scikit-learn, TensorFlow (versions 2.4.1), TensorFlow GPU, OpenCV, and Mediapipe for deep learning tasks.
+## Problem Statement
+
+Manual print quality inspection is inefficient and prone to human error. Subtle defects such as smudges, misalignment, and missing print regions often go undetected, resulting in increased material wastage and reduced product quality.
+
+## Proposed System
+
+The proposed system uses an industrial camera to capture real-time images of printed materials. These images are processed using a YOLO-based Convolutional Neural Network (CNN) to detect defects. The system performs inference on an edge device, enabling low-latency detection and immediate feedback.
+
+## Methodology
+
+The system follows the steps below:
+
+Continuous image capture from the printing line
+
+Image preprocessing to enhance quality
+
+Defect detection using YOLO-based CNN
+
+Classification of detected defects
+
+Alert generation and data logging
 
 ## System Architecture
-<!--Embed the system architecture diagram as shown below-->
 
-![Screenshot 2023-11-25 133637](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/a60c11f3-0a11-47fb-ac89-755d5f45c995)
+The architecture consists of image acquisition hardware, an edge computing unit, and a software module for defect analysis. The modular design allows easy integration with existing printing systems and supports scalability.
 
+## Technologies Used
 
-## Output
+Programming Language: C++
 
-<!--Embed the Output picture at respective places as shown below as shown below-->
-#### Output1 - Name of the output
+Computer Vision: OpenCV
 
-![Screenshot 2023-11-25 134037](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/8c2b6b5c-5ed2-4ec4-b18e-5b6625402c16)
+Deep Learning: CNN, YOLO
 
-#### Output2 - Name of the output
-![Screenshot 2023-11-25 134253](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
+Hardware: Industrial camera, edge computing device
 
-Detection Accuracy: 96.7%
-Note: These metrics can be customized based on your actual performance evaluations.
+## Implementation Details
 
+The deep learning model is trained using labeled datasets containing various print defect categories. Preprocessing techniques such as resizing and normalization are applied to ensure consistent input. The trained model is optimized for real-time inference on edge devices.
 
-## Results and Impact
-<!--Give the results and impact as shown below-->
-The Sign Language Detection System enhances accessibility for individuals with hearing and speech impairments, providing a valuable tool for inclusive communication. The project's integration of computer vision and deep learning showcases its potential for intuitive and interactive human-computer interaction.
+## Results and Observations
 
-This project serves as a foundation for future developments in assistive technologies and contributes to creating a more inclusive and accessible digital environment.
+The system successfully detects printing defects with high accuracy and low latency. Compared to manual inspection, the AI-based system provides consistent results and reduces inspection time significantly.
 
-## Articles published / References
-1. N. S. Gupta, S. K. Rout, S. Barik, R. R. Kalangi, and B. Swampa, “Enhancing Heart Disease Prediction Accuracy Through Hybrid Machine Learning Methods ”, EAI Endorsed Trans IoT, vol. 10, Mar. 2024.
-2. A. A. BIN ZAINUDDIN, “Enhancing IoT Security: A Synergy of Machine Learning, Artificial Intelligence, and Blockchain”, Data Science Insights, vol. 2, no. 1, Feb. 2024.
+## Applications
 
+Industrial printing quality control
 
+Additive manufacturing monitoring
+
+Packaging and labeling inspection
+
+## Advantages
+
+Automated and continuous inspection
+
+Reduced human intervention
+
+Improved accuracy and consistency
+
+## Limitations
+
+Requires sufficient training data
+
+Performance depends on camera placement and lighting
+
+## Future Enhancements
+
+Future work includes integrating predictive maintenance features and adaptive learning to improve system robustness.
+
+## Conclusion
+
+This project demonstrates the effective use of AI and computer vision for real-time print quality monitoring. The proposed system enhances quality assurance and supports efficient industrial operations.
